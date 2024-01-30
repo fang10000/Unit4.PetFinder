@@ -5,7 +5,7 @@ window.onload = function() {
             const petsDiv = document.getElementById('pets');
             data.forEach(pet => {
                 const petElement = document.createElement('p');
-                petElement.textContent = `Name: ${pet.name}, Owner: ${pet.owner}`;
+                petElement.textContent = `Name: ${pet.name}, Owner: ${pet.owner}, Breed: ${pet.breed}, Age: ${pet.age}`;
                 petsDiv.appendChild(petElement);
             });
         })
