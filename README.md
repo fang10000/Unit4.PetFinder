@@ -10,19 +10,30 @@ Begin this Career Simulation by cloning the GitHub repo, pseudocoding prompts, i
 
 ### Problem 1: GET all pets
 
-The GET route for all pets is currently "under construction". Navigate to `index.js` and find the GET method at `/api/v1/pets` and write the code to get all pets from the database.
+The GET route for all pets is `/api/v1/pets`. 
+__Pseudocode__: Define an endpoint in the server for GET request and get all pets data, including name, owner, etc.
 
 ### Problem 2: GET pets by name
 
-The GET route for pets by name is currently "under construction". Navigate to `index.js` and find the GET method at `/api/v1/pets/:name` and write the code to get a pet by name from the database.
+The GET route for pets by name is `/api/v1/pets/:name`. 
+__Pseudocode__:
+- Define an endpoint in the server for GET request by name
+- If name is found, return the pet information 
+- If name is not found, return an error message "Pet not found"
 
 ### Problem 3: GET pet by owner's name with a query string
 
-The GET route for pets by owner's name is currently "under construction". Navigate to `index.js` and find the GET method at `/api/v1/pets/owner` and write the code to get a pet by owner's name from the database.
+The GET route for pets by owner's name is `/api/v1/pets/owner`. The way to test the query is working is to nevigate in the browswer with for example '/api/vi/pets/owner?owner=John'.
+__Psuedocode__:
+- Define an endpoint in the server for GET request by owner
+- If owner name is found, return the pet(s) information 
+- If owner name is not found, return an error message "No pets found for this owner"
+
 
 ### STRETCH GOAL: Problem 4: Serve a static index.html file
 
-The GET route for serving a static index.html file is currently "under construction". Navigate to `index.js` and find the GET method at `/` and write the code to serve a static index.html file.
+The GET route for serving a static index.html file. The index.html file currently render all the pets in the API. 
+
 
 ### Endpoints
 
